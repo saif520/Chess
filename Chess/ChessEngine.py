@@ -7,7 +7,7 @@ state. It will also keep a move log
 class GameState():
     def __init__(self):
         #board is 8*8 2d list, each element of the list has 2 characters.
-        #the first character represents the color of the piece, 'b' or 'b'
+        #the first character represents the color of the piece, 'b' or 'w'
         #the second character represents the type of the piece, 'K','Q','R','B','N' or 'P'
         #"--" represents an empty space with no piece
         self.board=[
@@ -271,3 +271,4 @@ class Move():
 
     def getRankFile(self,r,c):
         return self.colsToFiles[c]+self.rowsToRanks[r]
+
